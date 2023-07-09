@@ -5,7 +5,7 @@ terraform {
     resource_group_name  = "Terraform"
     storage_account_name = "tfsatya"
     container_name       = "tfstate123"
-    key                  = "0qMaDUuakpanuXay99%2BO5%2BqF7pfEjwzmTrbuUVpCJlE%3D"
+    key                  = "terraformgithubexample.tfstate"
   }
   required_providers {
     azurerm = {
