@@ -35,7 +35,7 @@ jobs:
       run: terraform init
 # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan -out main.tfplan
+      run: terraform plan -out main.tfplan -lock=false
 # Apply Terraform changes
     - name: Terraform Apply
-      run: terraform apply main.tfplan
+      run: terraform apply main.tfplan -lock=false
