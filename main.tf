@@ -22,7 +22,7 @@ provider "azurerm" {
 }
 
 locals {
-  resource_group_name="app-grp"
+  resource_group_name="app-grp3"
   location="North Europe"
   virtual_network={
     name="app-network"
@@ -41,7 +41,7 @@ locals {
   ]
 }
 
-resource "azurerm_resource_group" "appgrp" {
+resource "azurerm_resource_group" "appgrp3" {
   name     = local.resource_group_name
   location = local.location  
 }
