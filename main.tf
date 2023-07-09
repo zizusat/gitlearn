@@ -5,7 +5,7 @@ terraform {
     resource_group_name  = "kopicloud-tstate-rg"
     storage_account_name = "kopicloud-tstate-rg"
     container_name       = "tfstate"
-    key                  = "actions.tfstate"
+    key                  = "l5xtIDDK4ElxBJbl7ewJaQ0h/fvKl4TslL4m3oPVNbFcPgTRrBpmPYo2MUHJnw9MjbdXujgWZxqh+AStB3ZoPA=="
   }
   required_providers {
     azurerm = {
