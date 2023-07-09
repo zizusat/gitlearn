@@ -4,7 +4,7 @@ terraform {
   backend "azurerm" {
     resource_group_name  = "Terraform"
     storage_account_name = "tfsatya"
-    container_name       = "tfstate123"
+    container_name       = "tfstate1234"
     key                  = "terraformgithubexample.tfstate"
   }
   required_providers {
