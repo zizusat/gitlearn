@@ -17,4 +17,5 @@ terraform {
 # Configure the Azure provider
 provider "azurerm" { 
   features {}  
+  use_msi = true
 }
