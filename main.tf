@@ -1,7 +1,7 @@
 /*
 
 The following links provide the documentation for the new blocks used
-in this terraform configuration file
+in this terraform confibguration file
 
 1.azurerm_windows_virtual_machine - https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/windows_virtual_machine
 
