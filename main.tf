@@ -1,15 +1,18 @@
 terraform {
+
+  backend "azurerm" {
+    use_msi    = true
+  }
+
+  required_version = ">=0.14.5"
+  
   required_providers {
     azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "=3.0.0"
-     
+      source = "hashicorp/azurerm"
+      version = ">= 3.0.2, < 4.0.0"
     }
   }
 }
-
-# Configure the Microsoft Azure Provider
-
 
 # Create a resource group
 resource "azurerm_resource_group" "example" {
