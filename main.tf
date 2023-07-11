@@ -20,3 +20,6 @@ resource "azurerm_resource_group" "appgrp6" {
   name     = "app-grp"
   location = "North Europe"
 }
+provider “azurerm” {
+feature {}
+}
