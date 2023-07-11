@@ -11,6 +11,7 @@ terraform {
     azurerm = {
       version = "~>3.2"
       source  = "hashicorp/azurerm"
+       use_msi = true
     }
   }
 }
