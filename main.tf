@@ -16,14 +16,6 @@ terraform {
   }
 }
 
-# Configure the Microsoft Azure Provider
-provider "azurerm" {
-  features {}
-
-  use_msi = true
-  #...
-}
-
 resource "azurerm_resource_group" "appgrp6" {
   name     = "app-grp"
   location = "North Europe"
