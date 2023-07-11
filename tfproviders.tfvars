@@ -13,6 +13,9 @@ terraform {
       source  = "hashicorp/azurerm"
        use_msi = true
 features { 
+resource_group {
+      prevent_deletion_if_contains_resources = true
+    }
   }
     }
   }
