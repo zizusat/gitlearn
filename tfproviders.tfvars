@@ -13,6 +13,6 @@ key                  = "sasdsdda.tfstate"
 }
 provider "azurerm" {
   features {
-subscription_id   ="9b4f8ab9-0f32-4d9d-a63e-a9ad9e4c8eec"
+use_msi = true
   }
 }
