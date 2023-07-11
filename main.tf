@@ -1,12 +1,3 @@
-/*
-
-The following links provide the documentation for the new blocks used
-in this terraform confibguration file
-
-1.azurerm_windows_virtual_machine - https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/windows_virtual_machine
-
-*/
-
 terraform {
   required_providers {
     azurerm = {
@@ -16,10 +7,13 @@ terraform {
   }
 }
 
-resource "azurerm_resource_group" "appgrp6" {
-  name     = "app-grp"
-  location = "North Europe"
+# Configure the Microsoft Azure Provider
+provider "azurerm" {
+  features {}
 }
-provider “azurerm” {
-feature {}
+
+# Create a resource group
+resource "azurerm_resource_group" "example" {
+  name     = "example-resources"
+  location = "West Europe"
 }
