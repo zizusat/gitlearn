@@ -11,3 +11,6 @@ container_name       = "tfstate1234"
 key                  = "sasdsdda.tfstate"
   }
 }
+provider "azurerm" {
+  features {}
+}
