@@ -4,7 +4,7 @@ terraform {
     use_msi    = true
   }
 
-  required_version = ">=0.14.5"
+
   
   required_providers {
     azurerm = {
