@@ -7,18 +7,14 @@ terraform {
     container_name       = "tfstate1234"
     key                  = "sasa.tfstate"
   }
-   required_providers {
+  required_providers {
     azurerm = {
+      version = "~>3.2"
       source  = "hashicorp/azurerm"
-      version = "~>3.0"
     }
   }
 }
 # Configure the Azure provider
 provider "azurerm" { 
   features {}  
-   use_oidc         = true
-    use_azuread_auth = true
 }
-
-
